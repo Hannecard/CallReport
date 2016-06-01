@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title></title>
+  <meta charset="utf-8" />
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="js/sweetalert.min.js"></script> 
+  <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+</head>
+<body>
+  <!--Loader-->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <!--Fin Loader-->
+  <!--Parallax header-->
+  <div class="parallax-container">
+    <div class="parallax" ><img src="images/HANNECARD 002.jpg"></div>
+    <a class="waves-effect waves-light red btn-large btndeco" style="display : none;"><i class="material-icons">power_settings_new</i></a>
+    <a class="waves-effect waves-light btn-large btnco"><i class="material-icons">power_settings_new</i></a>
+  </div>
+  <div class="grey-text text-lighten-4 titre-page">
+    <div>Hannecard</div>
+    <div class="titre_ital">Passion For Performance</div>
+  </div>
+  <!--Fin Parallax-->
+  <!--Menu-->
+  <div id="siteWrapper">
+  <header>
+    <div id="headerTop"></div>
+    <div id="Grandenavigation">
+    <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">Thème 5</a></li>
+    <li><a href="#!">Thème 6</a></li>
+    <li><a href="#!">Thème 7</a></li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper teal lighten-3">
+      <div class="input-field hide-on-med-and-down" style="float:right;">
+        <input id="search" type="search" required>
+        <label for="search"><i class="material-icons">search</i></label>
+        <i class="material-icons">close</i>
+      </div>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+      <li><a href="index.html">Accueil</a></li>
+        <li><a href="badges.html">Thème 2</a></li>
+        <li><a href="collapsible.html">Thème 3</a></li>
+        <li><a href="mobile.html">Thème 4</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Autres<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+      <ul class="side-nav teal lighten-5" id="mobile-demo">
+        <div class="input-field search-mobile">
+          <input id="search " class="teal lighten-2" type="search" style="margin:0; " required>
+          <label for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="badges.html">Thème 2</a></li>
+        <li><a href="collapsible.html">Thème 3</a></li>
+        <li><a href="mobile.html">Thème 4</a></li>
+        <li><a href="#!">Thème 5</a></li>
+        <li><a href="#!">Thème 6</a></li>
+        <li><a href="#!">Thème 7</a></li>
+      </ul>
+    </div>
+  </nav></div>
+  </header>
+  <section id="content">
+     
+  <!--Fin menu-->
+  <!--Slider-->
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="images/KALKER011.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Nom projet</h3>
+          <h5 class="light grey-text text-lighten-3">Mini description !</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Nom projet </h3>
+          <h5 class="light grey-text text-lighten-3">Mini description !</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Nom projet</h3>
+          <h5 class="light grey-text text-lighten-3">Mini description !</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Nom projet</h3>
+          <h5 class="light grey-text text-lighten-3">Mini description !</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!--Fin Slider-->
+  <!--Filtres-->
+  <a href="#!" id="btnfiltre" class="btn waves-effect waves-light" onclick="Materialize.showStaggeredList('#staggered-test')" style="max-width: auto; margin: 0 auto; margin-top: 20px;">Voir les filtres</a>
+  <ul id="staggered-test" class="collapsible popout filtre" style="display:none;" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">tab</i>Catégories</div>
+      <div class="collection collapsible-body">
+        <a href="#!" class="collection-item">Web</a>
+        <a href="#!" class="collection-item">Lourd</a>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header "><i class="material-icons">query_builder</i>Date</div>
+      <div class="collection collapsible-body">
+        <a href="#!" class="collection-item">+ récents</a>
+        <a href="#!" class="collection-item">- récents</a>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">grade</i>Popularité</div>
+      <div class="collection collapsible-body">
+        <a href="#!" class="collection-item">Les plus consultés</a>
+        <a href="#!" class="collection-item">les mieux notés</a>
+      </div>
+    </li>
+  </ul>
+  <!--Fin Filtres-->
+  <!--Contenu-->
+  <div class="content-projet">
+    <div class="galerie">
+      <h2>Derniers ajoutés</h2>
+      <div class="card col s2 hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/intro.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+      <div class="card col s2 hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/intro.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+      <div class="card col s2 hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/intro.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+      <div class="card col s2 hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/intro.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+      <div class="card col s2 hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/intro.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+      <div class="card col s2 hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/intro.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+      <div class="card col s2 hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/intro.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container para-theme">
+      <div class="parallax" ><img src="images/KALKER119.jpg"></div>
+    </div>
+
+    <div class="galerie">
+      <h2>Les plus populaire</h2>
+      <div class="card col s2 hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/intro.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+      <div class="card col s2 hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/intro.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+      <div class="card col s2 hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/intro.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+      <div class="card col s2 hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/intro.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+      <div class="card col s2 hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/intro.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+      <div class="card col s2 hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/intro.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+      <div class="card col s2 hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/intro.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="page-footer grey darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Tous droits réservés à Hannecard</h5>
+          <p class="grey-text text-lighten-4">Retrouvez les derniers projets de Hannecard direcitement <a>ici</a></p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Donnez nous votre avis !</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">lien 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">lien 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">lien 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">lien 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2016 Tous droits réservés à Hannecard
+        <a class="grey-text text-lighten-4 right" href="#!">liens</a>
+      </div>
+    </div>
+  </footer>
+  </section>
+</div>
+ 
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.parallax').parallax();
+      $(".button-collapse").sideNav();
+      $(".dropdown-button").dropdown();
+      $('.modal-trigger').leanModal();
+      $('.slider').slider({full_width: true});
+      $(window).load(function () {
+        setTimeout(function () {
+          $('body').addClass('loaded');
+        }, 200);
+      });
+      $(".btnco").click(function(){
+        swal({   title: "Connexion",   text: "Entrez votre adresse email", type: "input",   showCancelButton: true,   closeOnConfirm: false,   showLoaderOnConfirm: true, }, function(){   setTimeout(function(){
+          //si adresse mail existe, renvoyer une autre fenetre pour le mdp
+          swal({   title: "Mot de passe",   text: "Entrez votre mot de passe", type: "input",   showCancelButton: true,   closeOnConfirm: false,   showLoaderOnConfirm: true, }, function(){   setTimeout(function(){
+            //si mdp est bon
+            swal("Bonjour + nom");
+            $(".btnco").css("display","none");
+            $(".btndeco").css("display","inline");
+
+            //sinon
+          }); 
+        });
+          //sinon, dire que l'adresse mail est erronée
+        }, 2000); 
+      });
+      });
+      $(".btndeco").click(function(){
+        swal({   title: "Deconnexion",   text: "Etes-vous sur de vouloir vous déconnecter ?",   type: "warning",   showCancelButton: true,   confirmButtonColor: "#DD6B55",   confirmButtonText: "Oui !",   cancelButtonText: "Non, pardon.",   closeOnConfirm: false,   closeOnCancel: true }, function(isConfirm){   if (isConfirm) {     swal("Déconnecté !", "Vous êtes maintenant un utilisateur lambda.", "success");  
+          $(".btndeco").css("display","none"); 
+          $(".btnco").css("display","inline");
+        } });
+
+      });
+      $("#btnfiltre").click(function(){
+        if($("#staggered-test").css("display") == "none"){
+          $("#staggered-test").fadeIn("slow");
+          $(this).dequeue();
+          $("#staggered-test").css("display","block");
+        }else{
+          $("#staggered-test").fadeOut("slow");
+          $(this).dequeue();
+          $("#staggered-test").css("display","none");
+        }
+      });
+      $(".collection-item").click(function(){
+        $(this).parent().children().removeClass("active");
+        $(this).addClass("active");
+        $('body').scrollSpy();
+      });
+      $(window).scroll(function() {
+ if(!$('header').hasClass("fixedHeader") && ($(window).scrollTop() > $('header').offset().top)) {
+ $('header').addClass("fixedHeader").data("top", $('header').offset().top);
+ $('#content').addClass("fixedContent");
+ } 
+ else if ($('header').hasClass("fixedHeader") && ($(window).scrollTop() < $('header').data("top"))) {
+ $('header').removeClass("fixedHeader");
+  $('#content').removeClass("fixedContent");
+
+ }
+ });
+    });
+addEventListener("scroll", scrolled, false);
+</script>
+</body>
+</html>
