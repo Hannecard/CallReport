@@ -22,8 +22,6 @@ if(isset($_POST['updatepb'])){
 $todo=find_todo($_SESSION['idu']);
 $pensebete=find_pensebete($_SESSION['idu']);
 
-
-
 include(dirname(__FILE__).'/../views/accueil.php');
 
  ?>
